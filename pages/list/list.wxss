@@ -1,0 +1,38 @@
+/* pages/list/list.wxss */
+.brand_item_list{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-top: 2rpx solid #ddd;
+  background-color: #fff;
+}
+.brand_item{
+  width: 90%;
+  display: block;
+  color: #333;
+  font-size: 28rpx;
+  margin: 0 auto;
+  }
+
+  .list-text:first-child{
+    border-top: 1rpx solid #efefef;
+    margin-top: 0;
+  }
+  .list-text{ background: #fff;}
+  .list-title{
+    color:#72a8fc;
+    font-size:28rpx;
+  }
+    .list-text{
+    height: 80rpx;
+    line-height: 80rpx;
+    padding-left: 36rpx;
+    margin-top: 12rpx;
+  }
+    .list-icon{
+    position: relative;
+    width: 36rpx;
+    height: 34rpx;
+    top: 4rpx;
+    margin-right: 16rpx;
+  }

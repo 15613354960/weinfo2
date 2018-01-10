@@ -1,0 +1,5 @@
+/* pages/detail/index.wxss */
+.bgfff{background-color: #fff;border-top: 1px solid #ddd;}
+.content-wrap{width: 90%;margin: 0 auto;}
+.details-title{font-size:44rpx;color: #444;padding: 24rpx 0;}
+.details-text{text-indent: 24rpx;line-height: 50rpx;color: #444;}

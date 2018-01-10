@@ -1,0 +1,31 @@
+  <view class="bgfff container">
+      <view class="list-text">
+          <image src="../../images/tubiao.png" class='list-icon' />
+          <text class='list-title'>知识</text>
+      </view>  
+      <block wx:for="{{res.knowledge}}" wx:key="{{res.knowledge.id}}">
+        <view class='brand_item_list' wx:if="{{item.typeid==1}}">
+          <navigator url="../detail/detail?id={{item.id}}">
+            <view class="brand_item">
+                <text class="name">{{item.title}}</text>
+            </view>
+          </navigator>
+        </view>
+      </block>
+      <view class="list-text">
+          <image src="../../images/tubiao.png" class='list-icon' />
+          <text class='list-title'>经验</text>
+      </view> 
+    <view>
+    <view>
+      <view>
+        <image src='' class='' />
+        <text>快乐小镇</text>
+      </view>
+      <view>
+        <image src='../../images/tubiao.png' class=''/>
+      </view>    
+    </view>
+
+    </view>
+</view>

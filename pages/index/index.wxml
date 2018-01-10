@@ -1,0 +1,86 @@
+<!--index.wxml-->
+<view class="bgfff container">
+    <view class='index-wrap'>
+      <image src="{{image.head}}" class="head-image"/>
+      <view class="index-search-wrap">
+      <!--搜索  -->
+      <view class="clearfix index-search">
+        <form bindsubmit="formSubmit">      
+          <view class=" fl">
+            <input name="input" placeholder="请输入你要搜索的内容" class="search-input" />
+          </view>
+          <view class="fr btn-area">
+            <image src="{{image.search}}" class='search-image' />
+          </view>
+        </form>
+      </view>
+      <!-- 搜索下面快速查找 -->
+        <view class="venues_box clearfix">
+          <view class="venues_list">
+              <block wx:for="{{res}}" wx:key="{{item.typeid}}">
+                  <view class="fl venues_item" bindtap="tapName">
+                      <navigator url="../list/list?id={{item.id}}">
+                            <view class="venues_tit">{{item.data}}</view>
+                      </navigator>
+                  </view>
+              </block>
+          </view>
+        </view>        
+      </view>
+
+    </view>
+  <!--孕期工具  -->
+    <view class="text ptop0">
+        <view class="line_flag"></view>
+        <text>孕期工具</text>
+    </view> 
+    <view class="tool_box">
+        <view class="tool_list">
+            <block wx:for="{{toolItems}}" wx:key="{{toolItems.tid}}">
+                <view class="tool_item">
+                    <navigator url="../brand/index?id={{item.id}}">
+                        <image src="{{item.smallpic}}"/>
+                        <text>{{item.name}}</text>
+                    </navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+  <!--二  -->
+  <view class='bgfff mt14'>
+      <!--今日孕妈关注 -->
+      <view class="text top1ef">
+          <view class="line_flag"></view>
+          <text>今日孕妈关注</text>
+      </view>  
+      <view class='index-change-list'>
+          <text>到了本周，宝宝跟你见面的时间进入倒计时，你需要在家人的协助下最后一次清点待产产包，放便宝宝发动之后立即入院。</text>
+      </view>
+      <!--今日孕妈变化 -->
+      <view class="text top1ef">
+        <view class="line_flag"></view>
+        <text>今日孕妈变化</text>
+      </view>
+      <view class='clearfix index-change-list'>
+        <view class='fl index-change-wrap'>
+          <text class='index-change'>宝宝马上就要降生了，你准备好了吗？面对分娩一定要淡定，要知道....</text>      
+          <view class='change-notice'>
+            <image src="../../images/foo4.png" class='index-smail-icon'></image>关键词：
+            <text>规律宫缩 分娩</text>
+          </view>
+        </view>
+        <image src="../../images/list1.png" class='fr change-list-image'></image>
+      </view>
+  </view>
+  <!--三  -->
+  <view class='bgfff mt14'>
+    <!--今日孕期知识  -->
+    <view class="text top1ef">
+        <view class="line_flag"></view>
+        <text>今日孕期知识</text>
+    </view>
+    <view>
+      
+    </view>  
+  </view>
+</view>

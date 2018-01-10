@@ -1,0 +1,9 @@
+<!--pages/detail/index.wxml-->
+<view class="bgfff container">
+  <view class='content-wrap'>
+    <view class='details-title'><text>{{info.title}}</text></view>
+    <view class="details-text"><text>
+      {{info.text}}  
+    </text></view>
+  </view>
+</view>
